@@ -8,7 +8,7 @@ twice twice ("|"++) ""
 eval: 2^2 = 4 streepjes ("||||")
 
 twice twice twice ("|"++) ""
-eval: 2^4 = 16 streepjes "||||||||||||||||"
+eval: 2^4 = 16 streepjes ("||||||||||||||||")
 
 twice twice twice twice ("|"++) ""
 eval: 2^16 = 65536 streepjes
