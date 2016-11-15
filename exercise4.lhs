@@ -52,3 +52,10 @@ the "$" operator is useful for "ad-hoc composition".
 The operator assumes that the numbers are written in little endian. If we invert
 its associativity we change its endianness and have to reorder the binary
 digits.
+
+
+4.4
+
+The fully parenthesized expression is:
+
+((((f x) >= 0) && a) || (((((g x) y) * 7) + 10) == (b - 5)))
