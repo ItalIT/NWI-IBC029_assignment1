@@ -1,3 +1,6 @@
+Hendrik Werner // s4549775
+Jasper Haasdijk // s4449754
+
 > oldManCounts :: String -> String
 > oldManCounts s = "This old man, he played " ++ s ++ ",\n"
 

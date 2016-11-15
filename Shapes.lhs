@@ -22,6 +22,9 @@ boundingBox  ∷ Shape → (Double, Double)  -- width and height
 
 ----------------------------------------
 
+Hendrik Werner // s4549775
+Jasper Haasdijk // s4449754
+
 exercise 6
 
 > area (Circle r) = pi * r * r

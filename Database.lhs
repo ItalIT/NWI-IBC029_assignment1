@@ -28,6 +28,9 @@ increaseAge      ∷ Person → Person
 
 ----------------------------------------
 
+Hendrik Werner // s4549775
+Jasper Haasdijk // s4449754
+
 exercise 1.1
 
 > hendrik, jasper :: Person

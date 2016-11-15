@@ -1,3 +1,6 @@
+Hendrik Werner // s4549775
+Jasper Haasdijk // s4449754
+
 exercise 3
 
 3.1
