@@ -22,7 +22,7 @@ exercise 4.2
 
 Subtraction is left associative because that's what we learned in school. It's
 pretty arbitrary to chose one over the other. Sometime someone chose for right
-assiciativity and we stuck with it.
+associativity and we stuck with it.
 We just need to chose one associativity for non-associative operators and then
 preferably stick to that associativity. "a - (b - c) != (a - b) - c"
 
