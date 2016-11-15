@@ -30,6 +30,7 @@ increaseAge      ∷ Person → Person
 
 exercise 1.1
 
+> hendrik, jasper :: Person
 > hendrik = ("Hendrik", 20, "Functional Programming")
 > jasper = ("Jasper", 20, "Operating Systems Security")
 > students2 = jasper : hendrik : students
