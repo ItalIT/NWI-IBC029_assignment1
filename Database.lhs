@@ -58,3 +58,50 @@ exercise 1.5
 
 > increaseAge :: Person -> Person
 > increaseAge (n, a, c) = (n, a + 1, c)
+
+exercise 1.6
+
+Note: I made functions containing the expressions to test and combine them.
+
+The expression part is on the right side of the "=". For example the expression
+for 1.6 a is "map increaseAge ps" where "ps" is [Person].
+
+1.6 a
+
+> incrementAge :: [Person] -> [Person]
+> incrementAge ps = map increaseAge ps
+
+1.6 b
+
+> promote :: [Person] -> [Person]
+> promote ps = map (\ (n, a, c) -> ("dr " ++ n, a, c)) ps
+
+1.6 c
+
+> findFritss :: [Person] -> [Person]
+> findFritss ps = filter (\ (n, _a, _c) -> (n == "Frits")) ps
+
+1.6 d
+
+helper function
+
+> isFavouriteCourse :: Person -> FavouriteCourse -> Bool
+> isFavouriteCourse (_n, _a, c) fc = c == fc
+
+> findFunctionalProgrammers :: [Person] -> [Person]
+> findFunctionalProgrammers ps = filter (\p -> isFavouriteCourse p "Functional Programming") ps
+
+1.6 e
+
+> findYoungsters :: [Person] -> [Person]
+> findYoungsters ps = filter (\p -> age p >= 20 && age p <= 29) ps
+
+1.6 f
+
+> findYoungFunctionalProgrammmers :: [Person] -> [Person]
+> findYoungFunctionalProgrammmers ps = findYoungsters (findFunctionalProgrammers ps)
+
+1.6 g
+
+> findYoungImperativeProgrammers :: [Person] -> [Person]
+> findYoungImperativeProgrammers ps = filter (\p -> isFavouriteCourse p "Imperative Programming") (findYoungsters ps)
