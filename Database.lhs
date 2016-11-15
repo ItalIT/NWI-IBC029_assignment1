@@ -53,3 +53,8 @@ exercise 1.4
 
 > twins :: Person -> Person -> Bool
 > twins (_n1, a1, _c1) (_n2, a2, _c2) = a1 == a2
+
+exercise 1.5
+
+> increaseAge :: Person -> Person
+> increaseAge (n, a, c) = (n, a + 1, c)
