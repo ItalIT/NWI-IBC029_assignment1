@@ -33,3 +33,11 @@ exercise 1.1
 > hendrik = ("Hendrik", 20, "Functional Programming")
 > jasper = ("Jasper", 20, "Operating Systems Security")
 > students2 = jasper : hendrik : students
+
+exercise 1.2
+
+> name :: Person -> Name
+> name (n, _a, _c) = n
+
+> favouriteCourse :: Person -> FavouriteCourse
+> favouriteCourse (_n, _a, c) = c
