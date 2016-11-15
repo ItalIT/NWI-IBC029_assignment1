@@ -1,4 +1,5 @@
 exercise 4.1
+============
 
 It's a good idea to choose infix notation for associative operators such as "+"
 because it does not set a predefined evaluation order which reflects the
@@ -19,6 +20,7 @@ ambiguous either.
 
 
 exercise 4.2
+============
 
 Subtraction is left associative because that's what we learned in school. It's
 pretty arbitrary to chose one over the other. Sometime someone chose for right
@@ -47,14 +49,17 @@ Instead of explicity defining "c" as "a . b" and then doing "c x" you can just
 use "a $ b $ x". This is more readable than the equivalent "a (b x)". I think
 the "$" operator is useful for "ad-hoc composition".
 
-4.3
+
+exercise 4.3
+============
 
 The operator assumes that the numbers are written in little endian. If we invert
 its associativity we change its endianness and have to reorder the binary
 digits.
 
 
-4.4
+exercise 4.4
+============
 
 The fully parenthesized expression is:
 
