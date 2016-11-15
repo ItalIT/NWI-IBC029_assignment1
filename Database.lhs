@@ -41,3 +41,10 @@ exercise 1.2
 
 > favouriteCourse :: Person -> FavouriteCourse
 > favouriteCourse (_n, _a, c) = c
+
+exercise 1.3
+
+> showPerson :: Person -> String
+> showPerson (n, a, c) = "Name: " ++ show n
+>                        ++ " Age: " ++ show a
+>                        ++ " Favourite Course: " ++ show c
