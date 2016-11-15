@@ -1,3 +1,25 @@
+exercise 2
+
+2.1
+
+insertionSort (7:(9:(2:[])))
+insert 7 (insertionSort 9:(2:[]))
+insert 7 (insert 9 (insertionSort (2:[])))
+insert 7 (insert 9 (insert 2 (insertionSort [])))
+insert 7 (insert 9 (insert 2 []))
+insert 7 (insert 9 (2:[]))
+insert 7 (insert 9 [2])
+insert 7 (2:insert 9 [])
+insert 7 (2:9:[])
+insert 7 (2:[9])
+insert 7 ([2, 9])
+2:insert 7 [9]
+2:7:[9]
+2:[7, 9]
+[2, 7, 9]
+
+2.2
+
 > twice :: (a -> a) -> a -> a
 > twice f x = f(f x)
 
