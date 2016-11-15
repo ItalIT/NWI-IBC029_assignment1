@@ -25,3 +25,11 @@ favouriteCourse  ∷ Person → FavouriteCourse
 showPerson       ∷ Person → String
 twins            ∷ Person → Person → Bool
 increaseAge      ∷ Person → Person
+
+----------------------------------------
+
+exercise 1.1
+
+> hendrik = ("Hendrik", 20, "Functional Programming")
+> jasper = ("Jasper", 20, "Operating Systems Security")
+> students2 = jasper : hendrik : students
