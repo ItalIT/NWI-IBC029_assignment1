@@ -46,3 +46,9 @@ composition.
 Instead of explicity defining "c" as "a . b" and then doing "c x" you can just
 use "a $ b $ x". This is more readable than the equivalent "a (b x)". I think
 the "$" operator is useful for "ad-hoc composition".
+
+4.3
+
+The operator assumes that the numbers are written in little endian. If we invert
+its associativity we change its endianness and have to reorder the binary
+digits.
