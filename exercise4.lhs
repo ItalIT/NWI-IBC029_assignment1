@@ -39,3 +39,10 @@ to less reduction steps.
 At the moment I cannot really confirm this. The example the answer's author
 gives is sound but I cannot generify this to a general case. I just assume that
 it is true in general.
+
+The "$" operator can be used to compose function without explicitly defining the
+composition.
+
+Instead of explicity defining "c" as "a . b" and then doing "c x" you can just
+use "a $ b $ x". This is more readable than the equivalent "a (b x)". I think
+the "$" operator is useful for "ad-hoc composition".
