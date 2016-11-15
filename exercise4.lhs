@@ -16,3 +16,26 @@ disambiguate.
 
 The same is true for prefix notation which would be "- - a b c" which is not
 ambiguous either.
+
+
+exercise 4.2
+
+Subtraction is left associative because that's what we learned in school. It's
+pretty arbitrary to chose one over the other. Sometime someone chose for right
+assiciativity and we stuck with it.
+We just need to chose one associativity for non-associative operators and then
+preferably stick to that associativity. "a - (b - c) != (a - b) - c"
+
+I could not think of a reason why string concatenation should be right
+associative. Concatenation is associative "a ++ (b ++ c) == (a ++ b) ++ c" so
+choosing for one over the other does not change the result.
+
+I googled for an answer and found this thread ("http://stackoverflow.com" ++
+"/questions/20342860/why-is-function-composition-in-haskell-right-associative").
+It is explained that right associativity is useful in conjunction with
+non-strict evaluation because while it does not cahnge the result it does lead
+to less reduction steps.
+
+At the moment I cannot really confirm this. The example the answer's author
+gives is sound but I cannot generify this to a general case. I just assume that
+it is true in general.
